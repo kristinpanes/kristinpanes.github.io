@@ -1,0 +1,273 @@
+
+body {
+    font-family: 'Ubuntu', sans-serif; 
+    margin: 0px 0px 0px 0px; 
+}
+#pagecontainer {
+    position: relative;
+    min-height:100vh;
+}
+
+#footer { 
+    background:rgb(38, 35, 34);
+    color:white;
+    padding: 20px 0px;
+    height: 1rem;
+    width:100%;
+    bottom: 0;
+}
+#footer p {
+    /*position:absolute; */
+    font-size:10px;
+    padding:2px;   
+    width:220px;
+    margin-left:20%;
+    display:inline;
+    
+}
+.column {  /* sociala medier-symbolerna */
+    display:inline;
+    float:right;
+    margin-right:20%;
+    margin-top:-7px;
+
+}
+.column a {  
+    padding: 0px 2px;
+    
+} 
+.textbox {
+    background-color:rgb(200, 199, 193, 0.8); /* 176 171 171/ 123 121 119*/ 
+    width: 60%;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-top:1px;
+    margin-top:70px;
+
+    /* animation: fadeEffect 1s; */
+}
+p { /* text i textboxen  */
+    padding: 1px 30px; /* 0px bottom/top, 15px left/right */
+    text-align:center;
+    vertical-align:middle;
+    font-size:16px;
+}
+p#aboutme {
+    text-align:left;
+}
+    @keyframes fadeEffect{
+    from {opacity: 0.2;}
+    to {opacity} 
+} 
+/* "last child" matchar det sista barnet av dess "parent", i det här fallet har vi angett att det endast gäller paragraferna - p - i html:en. Används för att skapa ett avstånd under den sista paragrafen till textrutan.*/
+p:last-child { 
+    padding-bottom:30px;
+}
+button {  /* Go Back-knappen */
+    padding:5px;
+    margin-top:5px;
+    margin-left:5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:bold;
+    background-color:ghostwhite;/*rgb(187, 183, 183) */
+    cursor:pointer; 
+}
+button:hover {
+    background-color:whitesmoke; /* rgb(181, 176, 176) */
+}
+h2.portfolio {
+    padding-top:0px;
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif; 
+    margin:0px;   
+    font-size:20px;
+}
+h2.all {
+    padding-top:0px;
+    margin-top:38px;
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:20px;
+}
+h3 {
+    margin-left:15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+h4 {
+    text-align:center;
+    padding:10px; 
+    margin:4px;
+    font-style:italic;
+}
+#frontpageimage {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    max-width:200px;
+
+}
+/*figure rör bilden plus figcapture (bildtexten)*/
+figure {    
+    margin-left:45px;
+    margin-top:50px;
+    width: 437px; 
+    text-align: center; /* texten (i figcapture) blir centrerad*/
+}  
+figcaption {
+    font-family: "Big Caslon", "Times New Roman", serif;
+    margin-top:5px;
+    padding-bottom:10px;
+}
+header {
+    /* rgb(38, 35, 34); */
+    color:black;
+    background-color:rgb(127, 127, 127, 0.25);
+    height:81px;
+    text-align:center;
+}
+header h1 {
+    display: inline; /* för att header ska ligga på en vågrät linje tillsammans med de andra elementen inom taggen "header". */
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    padding: 0px 15px;
+}
+ul{  /* Meny-flikarna */
+    display:inline; /* för att listan ska ligga på samma nivå som h1*/
+}
+ul li{
+
+    list-style-type: none; /* vi vill inte ha en lista med punkter */
+    display: inline-block;  /* för att listan ska ligga i en vågrät ordning. */
+    padding: 0px;
+    padding-top:25px;
+    margin: 8px 5px;
+    outline:none;
+}
+ul li a{ /* a-taggarna i listan (huvudmeny-flikarna)*/
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none; /* för att få bort strecken under texten */
+}
+
+/* m h a hover kan vi bestämma vad som händer med ett element som har muspekaren över sig. I det här fallet vill vi att bakgrundsfärgen på en menyflik ska ändra färg. */
+li a:hover {
+    /*color:lightsteelblue;*/
+    color:rgb(197, 83, 54); 
+}
+li a #comingsoon {
+    margin:10px;
+}
+/* klassen activebutton är till för att en enskild menyflik ska byta bakgrundsfärg (för att användaren ska veta vilken sida/flik denne befinner sig på*/
+.activebutton a {
+    /* color:rgb(176, 171, 171); */
+    color:dimgray; 
+}
+.Uppgift1 {
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width:100%;
+    text-align:center;  
+}
+.Uppgift1:hover {
+    background-color:lightslategrey;
+}
+.col {
+    float:left; /* elementen är flytande från vänster.*/
+    position:relative;
+    display:inline-block;
+    margin: 1%; /* 1% på varje sida om knapparna samt 12% width på varje knapp blir tillsammans 98%, allt får plats på samma nivå och anpassar sig efter skärmens bredd. */
+    width: 31.3%;
+    margin-top:1px;
+    margin-bottom:2px;
+    /*padding*/
+}
+.col a {
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.col2 {
+    float: left; /* elementen är flytande från vänster.*/
+    position:relative;
+    display:inline-block;
+    margin: 1%; /* 1% på varje sida om knapparna samt 12% width på varje knapp blir tillsammans 98%, allt får plats på samma nivå och anpassar sig efter skärmens bredd. */
+    width: 31.3%;  /* Ska vara 23% med vid.prod och MDI */
+    text-align: center; /*texten i elementet blir centrerad*/
+    margin-top: 5px;
+    /*padding: */
+}
+.col2 a {
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+table {
+    width: 250px;
+    margin: 30px auto;
+}
+table, th, td {
+    border: 2px solid black;
+
+}
+th, td {
+    padding: 5px;
+}
+.bg-img {  /* bakgrundsbilden */
+    background-image: url(IMG_NY.JPG);
+    min-height: 900px; 
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover; 
+    padding-bottom: 1rem;
+}
+
+.row::after { /* after sätter in något efter klassen row's content */
+    clear: both; /* specificerar att inga floating elements är tillåtna till vänster+höger om elementet. Därför hamnar textboxen under klassen row.*/
+    content: ""; /* content är tom */
+    display: table; /* elementet ska uppträda som ett "table"-element (tabell)*/  
+}
+.row {
+    top: 50%;
+    left:50%
+    transform: translate(-50%, -50%)
+}
+.portfoliopage {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+}
+#kristin5 {
+    float:right;
+    margin-top:20px;
+    margin-left:5px;   
+}
+#kristin2 {
+    float:left;
+    margin-right:25px;
+    margin-bottom:4px;
+}
+.backbutton {
+    margin-top:10px;
+    margin-left:8px;
+    margin-bottom:0px;
+}
+label{
+    float: left; /* Inmatningsrutorna hamnar åt höger på en rak linje, tillsammans med width. */
+    width: 160px;  /* avståndet i pixlar mellan texten och inmatningsfälten*/
+    padding-right:1px; /* Skapar med utrymme åt höger av texten, till vänster om inmatningsfälten. */
+    margin-top: 12px; /* justerar textraderna på samma nivå som inmatningsfälten. */
+}
+/*  Knapparnas avstånd från vänster med margin-left. */
+#buttons{
+    margin-left: 20px;
+    width:130px;
+}
+#portfoliocontent {
+    text-align:left;
+}
